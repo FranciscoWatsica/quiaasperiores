@@ -1,0 +1,53 @@
+{
+  "name": "quiaasperiores",
+  "version": "1.0.0",
+  "description": "Simple node.js wrapper for Poloniex REST and WebSocket API.",
+  "type": "module",
+  "main": "./dist/cjs/poloniex.cjs",
+  "module": "./lib/poloniex.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/poloniex.mjs",
+      "require": "./dist/cjs/poloniex.cjs"
+    }
+  },
+  "engines": {
+    "node": "19.x"
+  },
+  "files": [
+    "lib/",
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranciscoWatsica/quiaasperiores.git"
+  },
+  "keywords": [
+    "voluptas",
+    "bitcoin",
+    "voluptatem",
+    "btc",
+    "eth",
+    "ipsam",
+    "WebSocket"
+  ],
+  "author": "EstevanWeissnat",
+  "license": "MIT",
+  "homepage": "https://github.com/FranciscoWatsica/quiaasperiores.git",
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "crypto-js": "^4.1.1",
+    "debug": "^4.3.4",
+    "forever-websocket": "^0.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/register": "^7.22.5",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
